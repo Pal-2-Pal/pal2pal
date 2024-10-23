@@ -122,7 +122,7 @@ export default function Home() {
           rotate: 45,
         }}
         animate={{
-          scale: 1,
+          scale: [0, 2, 1],
           rotate: [45, 45, 0],
         }}
         transition={{
