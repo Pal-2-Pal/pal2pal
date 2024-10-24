@@ -28,8 +28,8 @@ export default function Home() {
       >
         Pal2Pal
       </motion.div>
-      <div className="z-20 flex flex-col gap-4 absolute">
-        <div className="quote z-20 w-screen flex justify-center">
+      <div className="z-20 flex flex-col gap-12 absolute">
+        <div className="quote mb-10 z-20 w-screen flex justify-center">
           <motion.span
             initial={{ scale: 0 }}
             animate={{ x: "-5vw", scale: 1 }}
@@ -67,7 +67,7 @@ export default function Home() {
           >
             PAL
           </motion.span>
-          <motion.span className="2">2</motion.span>
+          <motion.span className="two absolute">2</motion.span>
           <motion.span
             animate={{ x: btnAnimateTrig ? "20vw" : "25vw" }}
             transition={{
@@ -95,7 +95,7 @@ export default function Home() {
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ delay: 0.5, duration: 1.5 }}
-          className="flex flex-col md:flex-row justify-center gap-x-48 bottom-0 absolute buttons mb-10 md:mb-20 md:text-8xl z-20"
+          className="flex flex-col md:flex-row justify-center gap-x-48 bottom-0 absolute buttons mb-10 md:mb-10 md:text-8xl z-20"
         >
           <button
             onMouseEnter={() => setBtnTrig(1)}
@@ -136,9 +136,9 @@ export default function Home() {
           muted
           loop
           playsInline
-          className="absolute z-5 w-full h-full object-cover"
+          className="absolute z-5 w-full h-full object-cover opacity-30"
         >
-          <source src="/1.mp4" type="video/mp4" />
+          <source src="/2.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div
